@@ -150,8 +150,6 @@
             <h1>PVP Siddhartha Engineering College</h1>
             <p>Empowering Future Engineers with Quality Education and Innovation</p>
         </div>
-    </section>
-
     <section id="about">
         <div class="container">
             <h2>About Us</h2>
@@ -164,78 +162,39 @@
             <p>Providing quality education through innovative teaching methods and industry collaboration.</p>
         </div>
     </section>
-
-   
-    <div id="departments">
+<div class="popup" id="popup">
+        <h3 id="popup-title"></h3>
+        <p id="popup-description"></p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+    <section id="departments">
         <div class="container">
-        <h2>Undergraduate Courses</h2>
-        <div class="departments">
-            <div class="departments" onclick="showPopup('popup-cse')">
-                <h3>Computer Science & Engineering (CSE)</h3>
+            <h2>Our Departments</h2>
+            
+            <div class="department">
+                <h3>Computer Science Engineering</h3>
+                <p>Offering cutting-edge education in software development, artificial intelligence, and data science.</p>
+                <p>Key Features: Advanced Computer Labs, AI & Machine Learning Lab, Industry Partnerships</p>
             </div>
-            <div class="departments" onclick="showPopup('popup-ece')">
-                <h3>Electronics & Communication Engineering (ECE)</h3>
+
+            <div class="department">
+                <h3>Electronics & Communication Engineering</h3>
+                <p>Specializing in embedded systems, communication technologies, and electronic design.</p>
+                <p>Key Features: Digital Signal Processing Lab, VLSI Design Center, IoT Research Facility</p>
             </div>
-            <div class="departments" onclick="showPopup('popup-eee')">
-                <h3>Electrical & Electronics Engineering (EEE)</h3>
+
+            <div class="department">
+                <h3>Mechanical Engineering</h3>
+                <p>Comprehensive training in design, manufacturing, and thermal systems.</p>
+                <p>Key Features: CAD/CAM Laboratory, Robotics Center, Workshop Facilities</p>
             </div>
-            <div class="course" onclick="showPopup('popup-mech')">
-                <h3>Mechanical Engineering (MECH)</h3>
-            </div>
-            <div class="departments" onclick="showPopup('popup-civil')">
-                <h3>Civil Engineering (CIVIL)</h3>
-            </div>
-            <div class="departments" onclick="showPopup('popup-it')">
-                <h3>Information Technology (IT)</h3>
+
+            <div class="department">
+                <h3>Civil Engineering</h3>
+                <p>Expertise in structural design, construction technology, and environmental engineering.</p>
+                <p>Key Features: Structural Engineering Lab, Environmental Engineering Lab, Material Testing Facility</p>
             </div>
         </div>
-    </div>
-
-    <div id="popup-cse" class="popup">
-        <button class="close" onclick="closePopup()">&times;</button>
-        <h3>Computer Science & Engineering (CSE)</h3>
-        <p>Learn cutting-edge technologies and programming skills to excel in the tech industry.</p>
-    </div>
-    <div id="popup-ece" class="popup">
-        <button class="close" onclick="closePopup()">&times;</button>
-        <h3>Electronics & Communication Engineering (ECE)</h3>
-        <p>Explore electronics, communication systems, and signal processing to shape the future of communication.</p>
-    </div>
-    <div id="popup-eee" class="popup">
-        <button class="close" onclick="closePopup()">&times;</button>
-        <h3>Electrical & Electronics Engineering (EEE)</h3>
-        <p>Delve into electrical systems, power engineering, and renewable energy solutions.</p>
-    </div>
-    <div id="popup-mech" class="popup">
-        <button class="close" onclick="closePopup()">&times;</button>
-        <h3>Mechanical Engineering (MECH)</h3>
-        <p>Master the principles of mechanics and design innovative machinery and systems.</p>
-    </div>
-    <div id="popup-civil" class="popup">
-        <button class="close" onclick="closePopup()">&times;</button>
-        <h3>Civil Engineering (CIVIL)</h3>
-        <p>Build a career in construction, structural design, and sustainable development.</p>
-    </div>
-    <div id="popup-it" class="popup">
-        <button class="close" onclick="closePopup()">&times;</button>
-        <h3>Information Technology (IT)</h3>
-        <p>Specialize in software development, networking, and IT solutions for a dynamic career.</p>
-    </div>
-
-    <div class="overlay" id="overlay" onclick="closePopup()"></div>
-    <script>
-        function showPopup(popupId) {
-            document.getElementById(popupId).style.display = 'block';
-            document.getElementById('overlay').style.display = 'block';
-        }
-
-        function closePopup() {
-            document.querySelectorAll('.popup').forEach(popup => {
-                popup.style.display = 'none';
-            });
-            document.getElementById('overlay').style.display = 'none';
-        }
-    </script>
     </section>
     <section id="facilities">
         <div class="container">
