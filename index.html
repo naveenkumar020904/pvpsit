@@ -165,6 +165,37 @@
         </div>
     </section>
 
+    <div id="courses" class="section">
+        <h2>Undergraduate Courses</h2>
+        <div class="courses">
+            <div class="course" onclick="showPopup('cse')">
+                <h3>Computer Science & Engineering (CSE)</h3>
+            </div>
+            <div class="course" onclick="showPopup('ece')">
+                <h3>Electronics & Communication Engineering (ECE)</h3>
+            </div>
+            <div class="course" onclick="showPopup('eee')">
+                <h3>Electrical & Electronics Engineering (EEE)</h3>
+            </div>
+            <div class="course" onclick="showPopup('mech')">
+                <h3>Mechanical Engineering (MECH)</h3>
+            </div>
+            <div class="course" onclick="showPopup('civil')">
+                <h3>Civil Engineering (CIVIL)</h3>
+            </div>
+            <div class="course" onclick="showPopup('it')">
+                <h3>Information Technology (IT)</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay" onclick="closePopup()"></div>
+
+    <div class="popup" id="popup">
+        <h3 id="popup-title"></h3>
+        <p id="popup-description"></p>
+        <button onclick="closePopup()">Close</button>
+    </div>
     <section id="departments">
         <div class="container">
             <h2>Our Departments</h2>
@@ -222,7 +253,7 @@
                 <h3>Sports Complex</h3>
                 <ul>
                     <li>Indoor sports arena</li>
-                    <li>Olympic-size swimming pool</li>
+                    <li>Outdoor sports grounds</li>
                     <li>Cricket ground and football field</li>
                     <li>Modern gymnasium</li>
                 </ul>
